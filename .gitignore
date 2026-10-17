@@ -1,17 +1,160 @@
-# 系统文件
+# ==================== 系统文件 ====================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# 敏感信息
+# ==================== 敏感信息 ====================
 *.env
+*.env.local
+*.env.*.local
 *.key
 *.pem
+*.crt
 secret*
 token*
 password*
+credentials*
+*.p12
+*.pfx
+
+# ==================== IDE 和编辑器 ====================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/tasks.json
+*.code-workspace
+
+# IntelliJ IDEA / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+target/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+.#*
+
+# ==================== 构建和依赖 ====================
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Java / Maven / Gradle
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+*.gradle
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.nupkg
+*.snupkg
+*.vspscc
+*.vssscc
+Build.ServerRelativeUrl
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+test-binary
+
+# Ruby
+vendor/bundle/
+*.gem
+
+# PHP
+vendor/
+composer.lock
+
+# ==================== 日志和临时文件 ====================
+*.log
+logs/
+*.tmp
+*.temp
+*.cache
+*.pid
+*.lock
+
+# ==================== 测试和覆盖率 ====================
+coverage/
+.nyc_output/
+*.coverage
+coverage-*.json
+
+# ==================== 发布和打包 ====================
+dist/
+build/
+*.tgz
+*.zip
+*.tar.gz
+
+# ==================== 数据库文件 ====================
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+
+# ==================== 其他常见忽略 ====================
+# 操作系统生成文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 编译产物
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# 包管理器
+node_modules/
+bower_components/
+
+# 本地配置文件
+.local/
+.config/
